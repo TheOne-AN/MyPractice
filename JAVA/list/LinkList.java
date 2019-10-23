@@ -178,6 +178,69 @@ public class LinkList {
         smallTail.next = bigHead.next;
         this.head = smallHead.next;
     }
+	/*删除一个已排序链表中所有重复元素*/
+    //将不重复元素插入到新链表
+    private void deleteDuplication(LinkedNode head) {
+        //如果这个链表为空或者只有一个元素直接返回
+        if(head == null && head.next == null) {
+            return;
+        }
+        //创建新链表存放不重复元素
+        LinkedNode newHead = new LinkedNode(0);
+        LinkedNode newTail = newHead;
+        LinkedNode cur = head;
+        while ( cur != null) {
+            //记录下一个节点地址
+            LinkedNode next = cur.next;
+            //当下个节点不为空且当前节点的值与下个节点的值相同
+            if (cur.next != null && cur.val == cur.next.val) {
+                //跳过所有节点值相同的结点
+                while(cur.next!=null && cur.next.val == cur.val) {
+                    cur = cur.next;
+                }
+                //在走一步，该节点值才与当前节点值不同
+                cur = cur.next;
+            }else { //如果下个节点值与当前节点值不相同，直接将当前节点插入新链表
+                newTail.next = cur;
+                cur.next = null;
+                newTail = newTail.next;
+                cur = next;
+            }
+        }
+        this.head = newHead.next;
+    }
+    /*删除一个已排序链表中所有重复元素*/
+    //在原链表上改变
+    private void newDeleteDuplication(LinkedNode head) {
+        //如果这个链表为空或者只有一个元素直接返回
+        if (head == null || head.next == null) {
+            return;
+        }
+        //创建新链表
+        LinkedNode newHead = new LinkedNode(0);
+        //将原链表接在新链表后面
+        newHead.next = head;
+        //通过prve和cur遍历新链表
+        LinkedNode prve = newHead;
+        LinkedNode cur = prve.next;
+        while (cur != null) {
+            //当下个节点不为空且当前节点的值与下个节点的值相同
+            if (cur.next != null && cur.val == cur.next.val) {
+                //跳过所有节点值相同的结点
+                while (cur.next != null && cur.val == cur.next.val) {
+                    cur = cur.next;
+                }
+                //直接改变链表的指向，跳过重复元素
+                prve.next = cur.next;
+                cur = cur.next;
+            } else {
+                //节点值不同，遍历
+                prve = prve.next;
+                cur = cur.next;
+            }
+        }
+        this.head = newHead.next;
+    }
     private void display() {
         for (LinkedNode node = this.head; node != null;
                 node = node.next) {
