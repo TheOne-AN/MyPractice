@@ -241,6 +241,85 @@ public class LinkList {
         }
         this.head = newHead.next;
     }
+	  //反转新链表
+        LinkedNode prve= null;
+        LinkedNode cur = newHead;
+        while (cur != null) {
+            LinkedNode next = cur.next;
+            //当最后一个指向null时，当前节点就是新链表的头节点
+            if(next == null) {
+                newHead = cur;
+            }
+            cur.next = prve;
+            prve = cur;
+            cur = next;
+        }
+        //与原链表对比
+        while (newHead != null) {
+            if(newHead.val != head.val) {
+                //有一个元素不同就返回false
+                return false;
+            }
+            newHead = newHead.next;
+            head = head.next;
+        }
+        //遍历完还没有返回，则是回文链表
+        return true;
+    }
+    private int Size(LinkedNode head) {
+        LinkedNode node = head;
+        int size = 0;
+        for (;node!=null;node = node.next) {
+            size++;
+        }
+        return size;
+    }
+	//找到两个单链表相交的起始节点。
+    private LinkedNode getIntersectionNode(LinkedNode headA,LinkedNode headB) {
+        int lenA = Size(headA);
+        int lenB = Size(headB);
+        int steps = 0;
+        //判断两个链表哪个长，让长的那个先走长出的一部分
+        if(lenA>lenB) {
+            steps = lenA - lenB;
+            for (int i = 0; i < steps; i++) {
+                headA = headA.next;
+            }
+        }else {
+            steps = lenB - lenA;
+            for (int i = 0; i < steps; i++) {
+                headB = headB.next;
+            }
+        }
+        //两个链表一起走，引用相等，则相交
+        while (headA != null) {
+            if (headA == headB) {
+                return headA;
+            }
+            headA = headA.next;
+            headB = headB.next;
+        }
+        return null;
+    }
+    //判断链表有没有环
+    private boolean hasCycle(LinkedNode head) {
+        if (head == null ||head.next == null) {
+            return false;
+        }
+        //利用快慢指针
+        //如果有环，快指针会追上慢指针，两者相等就返回true
+        LinkedNode fast = head;
+        LinkedNode slow = head;
+        while (fast != null && fast.next!= null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if(fast == slow) {
+                return true;
+            }
+        }
+        //没有环，返回false
+        return false;
+    }
     private void display() {
         for (LinkedNode node = this.head; node != null;
                 node = node.next) {
