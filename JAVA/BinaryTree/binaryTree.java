@@ -171,6 +171,72 @@ public class binaryTree {
         List<Integer> list = new ArrayList<>();
         list.add(root.val);
         //递归遍历每层？
-
+    }
+	   //按层遍历二叉树
+    public void levelOrder(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            System.out.print(node.val+" ");
+            if (node.left!= null) {
+                queue.offer(node.left);
+            }
+            if (node.right != null) {
+                queue.offer(node.right);
+            }
+        }
+    }
+    //按层遍历二叉树，并把每一层都存在一个表中
+    private List<List<Integer>> result = new ArrayList<>();//创建一个表，用来存每层的数据
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        if (root == null) {
+            return result;
+        }
+        //构造辅助函数从第0层开始遍历二叉树
+        helper(root,0);
+        return result;
+    }
+    private void helper(TreeNode root,int level) {
+        if (level == result.size()) {
+            //到达第level层还没有对应的数组，则需创建一个数组
+            result.add(new ArrayList<>());
+        }
+        //访问根节点，将val放入数组
+        result.get(level).add(root.val);
+        if (root.left != null) {
+            helper(root.left,level+1);
+        }
+        if (root.right != null) {
+            helper(root.right,level+1);
+        }
+    }
+    //找到结点p和q的最近公共祖先
+    private TreeNode ancestor = null;
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null) {
+            return null;
+        }
+        findAncestor(root,p,q);
+        return ancestor;
+    }
+    private boolean findAncestor(TreeNode root,TreeNode p, TreeNode q) {
+        if (root == null) {
+            return false;
+        }
+        //在左子树中寻找p或q
+        int left = findAncestor(root.left,p,q) ? 1:0;
+        //在右子树中找p或q
+        int right = findAncestor(root.right,p,q)?1:0;
+        //当根节点为p或q
+        int mid = (root == p || root == q) ?1:0;
+        //如果left+mid+right >= 2，则证明root就是p和q的最近公共结点
+        if (left+right+mid >= 2 ) {
+            ancestor = root;
+        }
+        return (left+mid+right)> 0;
     }
 }
