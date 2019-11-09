@@ -239,4 +239,181 @@ public class binaryTree {
         }
         return (left+mid+right)> 0;
     }
+	 //将一个二叉搜索树转化为一个排序的双向链表
+    //left指向根节点的前一个元素，right指向根节点的后一个元素
+    //这就是一个双向的链表
+    public TreeNode Convert(TreeNode pRootOfTree) {
+        if(pRootOfTree == null) {
+            return null;
+        }
+        if (pRootOfTree.left == null && pRootOfTree.right == null) {
+            return pRootOfTree;
+        }
+        //递归把左子树变成双向链表，返回这个链表的第一个节点
+        TreeNode left = Convert(pRootOfTree.left);
+        TreeNode leftTail = left;
+        //找到左子树的尾结点，让尾结点和头结点相互指向
+        while (leftTail != null && leftTail.right != null) {
+            leftTail = leftTail.right;
+        }
+        //循环结束leftTail指向左子树的最后一个节点
+        //left可能是null
+        if (left != null) {
+            //和根节点相互指向
+            pRootOfTree.left = leftTail;
+            leftTail.right = pRootOfTree;
+        }
+        //递归构造右子树的双向链表
+        TreeNode right = Convert(pRootOfTree.right);
+        if (right != null) {
+            pRootOfTree.right = right;
+            right.left = pRootOfTree;
+        }
+        //返回链表的头结点
+        return left == null ? pRootOfTree : left;
+    }
+    //根据一棵树的前序遍历结果和中序遍历结果构建二叉树
+    private int index = 0; //记录访问到那个字符了
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+            index = 0;//每次构建之前置为0；
+        return helpeBuildtree(preorder,inorder,0,inorder.length);
+    }
+    private TreeNode helpeBuildtree(int [] preorder,int[] inorder,
+                                    int inorderLeft,int inorderRight) {
+          //非法情况，这个子树没有中序遍历结果
+        if (inorderLeft >= inorderRight) {
+                return null;
+            }
+            //所要取得元素下标越界，返回
+        if (index >= preorder.length) {
+            return null;
+        }
+        //取出当前index下标对应的值，构造树
+        TreeNode root = new TreeNode(preorder[index]);
+        index++;//下标加一，取下一个元素的位置下标
+        //找到该节点在中序遍历结果中的位置
+        int pos = find(inorder,inorderLeft,inorderRight,root.val);
+        root.left = helpeBuildtree(preorder,inorder,inorderLeft,pos);
+        root.right = helpeBuildtree(preorder,inorder,pos+1,inorderRight);
+        return root;
+    }
+    private int find(int[] inorder,int inorderLeft,int inorderRight,int val) {
+        for (int i = inorderLeft; i < inorderRight; i++) {
+            if (inorder[i] == val) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    //leetcode :606. 根据二叉树创建字符串
+    //创建一StringBuilder对象用来存储字符串，apend方法用来添加字符
+    private StringBuilder stringBuilder = new StringBuilder();
+    public String tree2str(TreeNode t) {
+        //如果是空树，返回null
+        if (t == null) {
+            return null;
+        }
+        tree2strHelper(t);
+        //因为根节点不需要括号，所以去点第一个元素和最后一个元素
+        stringBuilder.deleteCharAt(0);
+        stringBuilder.deleteCharAt(stringBuilder.length() - 1);
+        return stringBuilder.toString();
+    }
+    private void tree2strHelper(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        //先序遍历完成递归
+        stringBuilder.append("(");
+        //访问当前节点
+        stringBuilder.append(root.val);
+        //访问左子树
+        tree2strHelper(root.left);
+        if (root.left == null && root.right!= null) {
+            stringBuilder.append("()");
+        }
+        //访问右子树
+        tree2strHelper(root.right);
+        stringBuilder.append(")");
+    }
+    //非递归二叉树遍历
+    //前序遍历
+    public List<Integer> preorderTraversal2(TreeNode root) {
+            List<Integer> result = new ArrayList<>();
+            if (root == null) {
+                return result;
+            }
+            //创建一个栈
+            Stack<TreeNode> stack = new Stack<>();
+            //将根节点入栈
+            stack.push(root);
+            while (!stack.isEmpty()) {
+                //先出栈，然后将右子树和左子树入栈
+                TreeNode node = stack.pop();
+                result.add(node.val);
+                if (node.right != null ) {
+                    stack.push(node.right);
+                }
+                if (node.left != null ) {
+                    stack.push(node.left);
+                }
+            }
+            return result;
+    }
+    //非递归中序遍历一颗二叉树
+    public List<Integer> inorderTraversal2(TreeNode root) {
+        List<Integer> result  = new ArrayList<>();
+        if (root == null) {
+            return result;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+        while (true) {
+            //cur不为null，就入栈
+            while (cur != null) {
+                stack.push(cur);
+                cur = cur.left;
+            }
+            if (stack.isEmpty()) {
+                break;
+            }
+            TreeNode top = stack.pop();
+            result.add(top.val);
+            cur = top.right;
+        }
+        return result;
+    }
+    //非递归后序遍历二叉树
+    public List<Integer> postorderTraversal2(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        if (root == null) {
+            return result;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+        //prve指向上次访问的节点
+        TreeNode prve = null;
+        while (true) {
+            //把左子树统统入栈，栈顶为最左边的节点
+            while (cur != null) {
+                stack.push(cur);
+                cur = cur.left;
+            }
+            if (stack.isEmpty()) {
+                break;
+            }
+            //将最左边的节点拿出来
+            TreeNode top = stack.peek();
+            //如果该节点的右子树为空，就可以将该节点元素添加到数组
+            if (top.right == null || prve == top.right) {
+                result.add(top.val);
+                stack.pop();
+                prve = top;
+            }else {
+                //右子树不为空，循环将右子树入栈
+                cur = top.right;
+            }
+        }
+        return result;
+    }
 }
