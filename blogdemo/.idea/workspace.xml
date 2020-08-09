@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8fe43c51-684d-4562-8cb2-d469518f9c3b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\tools\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bnwxk69ElapGh5d6Gsbte1oDFa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myCrawler/src/main" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA\myCrawler\src\main" />
+      <recent name="D:\IDEA\myCrawler\lib" />
+      <recent name="D:\IDEA\Review\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+        <option value="ArquillianJUnit" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="Heap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Connection.Heap" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Connection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MypriorityQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Connection.MypriorityQueue" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Connection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Connection.Sort" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Connection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="problem2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nowCoder.problem2" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nowCoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edward.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edward.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blogdemo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edward.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="Application.Sort" />
+        <item itemvalue="Application.MypriorityQueue" />
+        <item itemvalue="Application.Heap" />
+        <item itemvalue="Application.problem2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.execution.dashboard.RunDashboardServiceViewContributor@200a55cc" type="d2cb1801:ServiceModel$ContributorNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.execution.dashboard.RunDashboardServiceViewContributor@200a55cc" type="d2cb1801:ServiceModel$ContributorNode" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.execution.dashboard.RunDashboardServiceViewContributor@200a55cc" type="d2cb1801:ServiceModel$ContributorNode" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.database.console.DatabaseServiceViewContributor@79d8f4e1" type="d2cb1801:ServiceModel$ContributorNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.database.console.DatabaseServiceViewContributor@79d8f4e1" type="d2cb1801:ServiceModel$ContributorNode" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.database.console.DatabaseServiceViewContributor@79d8f4e1" type="d2cb1801:ServiceModel$ContributorNode" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@719768ac" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+          <option name="groupByContributor" value="true" />
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fe43c51-684d-4562-8cb2-d469518f9c3b" name="Default Changelist" comment="" />
+      <created>1589281413068</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589281413068</updated>
+      <workItem from="1589281414554" duration="206000" />
+      <workItem from="1589281686113" duration="1449000" />
+      <workItem from="1589283199583" duration="454000" />
+      <workItem from="1589283670391" duration="4604000" />
+      <workItem from="1589347218516" duration="2857000" />
+      <workItem from="1593757832450" duration="1333000" />
+      <workItem from="1593827794381" duration="1242000" />
+      <workItem from="1594047411517" duration="784000" />
+      <workItem from="1594102536215" duration="2432000" />
+      <workItem from="1594106231919" duration="4656000" />
+      <workItem from="1594170718184" duration="8069000" />
+      <workItem from="1594308902010" duration="1746000" />
+      <workItem from="1595479561527" duration="598000" />
+      <workItem from="1595990072964" duration="2328000" />
+      <workItem from="1596328559989" duration="4965000" />
+      <workItem from="1596609133333" duration="4957000" />
+      <workItem from="1596686146396" duration="15922000" />
+      <workItem from="1596881294100" duration="5227000" />
+      <workItem from="1596950851961" duration="3967000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="79" key="#New_Docker_Connection" timestamp="1589281865116">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="79" key="#New_Docker_Connection/0.0.1536.834@0.0.1536.834" timestamp="1589281865116" />
+    <state x="361" y="79" key="#Project_Structure" timestamp="1594106863078">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="79" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1594106863078" />
+    <state x="514" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596956104778">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="514" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1596956104778" />
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1596701941784">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1596701941784" />
+    <state x="591" y="333" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1594106855669">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="591" y="333" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1536.834@0.0.1536.834" timestamp="1594106855669" />
+    <state x="557" y="333" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1594106796296">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="557" y="333" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1536.834@0.0.1536.834" timestamp="1594106796296" />
+    <state x="499" y="167" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596609837545">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="167" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1596609837545" />
+    <state x="549" y="176" key="FileChooserDialogImpl" timestamp="1589284125661">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="176" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1589284125661" />
+    <state width="1024" height="548" key="GridCell.Tab.0.bottom" timestamp="1596957013312">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1596957013312" />
+    <state width="1024" height="548" key="GridCell.Tab.0.center" timestamp="1596957013312">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1596957013312" />
+    <state width="1024" height="548" key="GridCell.Tab.0.left" timestamp="1596957013312">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1596957013312" />
+    <state width="1024" height="548" key="GridCell.Tab.0.right" timestamp="1596957013312">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1596957013312" />
+    <state width="1024" height="548" key="GridCell.Tab.1.bottom" timestamp="1596957013313">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1596957013313" />
+    <state width="1024" height="548" key="GridCell.Tab.1.center" timestamp="1596957013312">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1596957013312" />
+    <state width="1024" height="548" key="GridCell.Tab.1.left" timestamp="1596957013312">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1596957013312" />
+    <state width="1024" height="548" key="GridCell.Tab.1.right" timestamp="1596957013312">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1596957013312" />
+    <state width="1024" height="548" key="GridCell.Tab.2.bottom" timestamp="1596957013313">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1596957013313" />
+    <state width="1024" height="548" key="GridCell.Tab.2.center" timestamp="1596957013313">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1596957013313" />
+    <state width="1024" height="548" key="GridCell.Tab.2.left" timestamp="1596957013313">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1596957013313" />
+    <state width="1024" height="548" key="GridCell.Tab.2.right" timestamp="1596957013313">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1596957013313" />
+    <state width="1024" height="548" key="GridCell.Tab.3.bottom" timestamp="1596957013313">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1596957013313" />
+    <state width="1024" height="548" key="GridCell.Tab.3.center" timestamp="1596957013313">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1596957013313" />
+    <state width="1024" height="548" key="GridCell.Tab.3.left" timestamp="1596957013313">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1596957013313" />
+    <state width="1024" height="548" key="GridCell.Tab.3.right" timestamp="1596957013313">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="548" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1596957013313" />
+    <state x="156" y="152" key="Maven.ArtifactSearchDialog" timestamp="1594105165635">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="156" y="152" key="Maven.ArtifactSearchDialog/0.0.1536.834@0.0.1536.834" timestamp="1594105165635" />
+    <state x="408" y="121" key="NewModule_or_Project.wizard" timestamp="1589283354553">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="408" y="121" key="NewModule_or_Project.wizard/0.0.1536.834@0.0.1536.834" timestamp="1589283354553" />
+    <state x="272" y="63" key="SettingsEditor" timestamp="1594171730048">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="272" y="63" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1594171730048" />
+    <state x="178" y="68" key="new project wizard" timestamp="1594106443834">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="178" y="68" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1594106443834" />
+    <state x="425" y="189" width="672" height="677" key="run.anything.popup" timestamp="1596702069284">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" width="672" height="677" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1596702069284" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1589282557567">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1589282557567" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/../Review/src/Connection/MypriorityQueue.java</url>
+          <line>64</line>
+          <properties class="Connection.MypriorityQueue" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
