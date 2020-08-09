@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="myCrawler" />
+        <module name="github_crawler" />
+        <module name="springboot-study" />
+        <module name="maven-test" />
+        <module name="blogdemo" />
+        <module name="spring-study" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="blogdemo" target="1.8" />
+      <module name="github_crawler" target="1.8" />
+      <module name="maven-test" target="1.8" />
+      <module name="myCrawler" target="1.7" />
+      <module name="spring-study" target="1.8" />
+      <module name="springboot-study" target="1.8" />
+      <module name="thread-adv-study" target="6" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="blogdemo" options="-parameters" />
+      <module name="springboot-study" options="-parameters" />
+    </option>
+  </component>
+</project>

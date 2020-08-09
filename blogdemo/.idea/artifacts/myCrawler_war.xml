@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="myCrawler:war">
+    <output-path>$PROJECT_DIR$/../myCrawler/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>myCrawler</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="java_github_crawler.war">
+      <element id="artifact" artifact-name="myCrawler:war exploded" />
+    </root>
+  </artifact>
+</component>

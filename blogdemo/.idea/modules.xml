@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Revew/Revew.iml" filepath="$PROJECT_DIR$/../Revew/Revew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Revew/Revew1.iml" filepath="$PROJECT_DIR$/../Revew/Revew1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Revew/Revew2.iml" filepath="$PROJECT_DIR$/../Revew/Revew2.iml" />
+      <module fileurl="file://D:/IDEAReview/Review.iml" filepath="D:/IDEAReview/Review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blogdemo.iml" filepath="$PROJECT_DIR$/blogdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../github_crawler/github_crawler.iml" filepath="$PROJECT_DIR$/../github_crawler/github_crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../maven-test/maven-test.iml" filepath="$PROJECT_DIR$/../maven-test/maven-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../myCrawler/myCrawler.iml" filepath="$PROJECT_DIR$/../myCrawler/myCrawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-study/spring-study.iml" filepath="$PROJECT_DIR$/../spring-study/spring-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springboot-study/springboot-study.iml" filepath="$PROJECT_DIR$/../springboot-study/springboot-study.iml" />
+    </modules>
+  </component>
+</project>
